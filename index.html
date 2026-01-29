@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Software Engineer & Full Stack Developer portfolio of Shushil Karki" />
+  <title>Portfolio — Shushil Karki</title>
+
+  <!-- Fonts (Apple-like: system font + Inter fallback) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Nav -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="brand-text">Shushil Karki</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div id="nav-menu" class="nav-menu">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#resume">Resume</a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="top" class="hero" aria-label="Intro">
+      <div class="hero-bg" role="img" aria-label="Mountain background"></div>
+
+      <div class="container hero-content">
+        <p class="eyebrow">Software Engineer • Full Stack Developer</p>
+        <h1>Building clean, reliable products that people actually enjoy using.</h1>
+        <p class="subhead">
+          Computer Science student at Marymount University (May 2026) based in Alexandria, VA — open to relocation.
+          I like turning messy ideas into fast, polished web apps with solid engineering habits.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+
+        <div class="hero-meta">
+          <div class="meta-card">
+            <span class="meta-title">Current</span>
+            <span class="meta-value">Software Engineer Intern</span>
+          </div>
+          <div class="meta-card">
+            <span class="meta-title">Location</span>
+            <span class="meta-value">Alexandria, VA</span>
+          </div>
+          <div class="meta-card">
+            <span class="meta-title">Focus</span>
+            <span class="meta-value">Full‑stack + UI/UX</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container split">
+        <div>
+          <h2>About</h2>
+          <p>
+            I’m a Computer Science student at Marymount University (Expected May 2026) who enjoys full‑stack development,
+            clean UI, and building features that are easy to use and easy to maintain.
+          </p>
+          <p>
+            Recently, I’ve been working on a full‑stack data management app for the GoVA project, improving how users
+            create, search, and generate reports from structured data. I care about writing readable code, collaborating
+            well, and shipping improvements that make a real difference for users.
+          </p>
+
+          <div class="chips" aria-label="Highlights">
+            <span class="chip">Full‑Stack Web Apps</span>
+            <span class="chip">CRUD + Reporting</span>
+            <span class="chip">UI/UX Mindset</span>
+            <span class="chip">Git + Team Collaboration</span>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <img src="assets/coding.png" alt="Working on code" loading="lazy" />
+          <div class="about-card-body">
+            <p class="about-card-title">Quick Details</p>
+            <ul class="about-list">
+              <li><span>School</span><span>Marymount University</span></li>
+              <li><span>Graduation</span><span>May 2026</span></li>
+              <li><span>Email</span><a href="mailto:shushil2060@gmail.com">shushil2060@gmail.com</a></li>
+              <li><span>Phone</span><a href="tel:+15714572118">(571) 457‑2118</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Experience</h2>
+          <p class="muted">The work I’m doing right now — focused on real users, real data, and real results.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-card">
+            <div class="timeline-top">
+              <h3>Software Engineer Intern — Marymount University (GoVA Project)</h3>
+              <span class="pill">Jan 2026 — Present</span>
+            </div>
+            <ul>
+              <li>Developed and enhanced a full‑stack web application to manage, search, and report structured data.</li>
+              <li>Designed efficient data structures to store and retrieve application data.</li>
+              <li>Built responsive UI for create/update/search workflows and report generation.</li>
+              <li>Collaborated with the team to debug, test features, and improve usability using best practices (Git, modular design, code reviews).</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="muted">Two projects that show how I build end‑to‑end, from UI to logic.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-media gradient-a" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>Shuttle Tracking Web Application</h3>
+              <p>
+                Built a responsive web app that displays shuttle routes, schedules, and tracking information with a focus on clean UI/UX.
+              </p>
+              <div class="tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">Responsive UI</span>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="https://github.com/print00" target="_blank" rel="noopener">GitHub</a>
+                <span class="dot" aria-hidden="true">•</span>
+                <a class="link disabled" href="#" aria-disabled="true" title="Add your live demo link here">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media gradient-b" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>Visual Aid System Using Raspberry Pi</h3>
+              <p>
+                Created a hardware‑software system using Raspberry Pi + sensors for real‑time visual feedback, with reliable signal processing.
+              </p>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Raspberry Pi</span>
+                <span class="tag">Sensors</span>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="https://github.com/print00" target="_blank" rel="noopener">GitHub</a>
+                <span class="dot" aria-hidden="true">•</span>
+                <a class="link disabled" href="#" aria-disabled="true" title="Add photos/video link here">Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="note">
+          Want this section to be even stronger? Add: repo links for each project + 2–3 screenshots each.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p class="muted">Tools I’m comfortable building with (and improving daily).</p>
+        </div>
+
+        <div class="skill-grid">
+          <div class="skill-card">
+            <h3>Languages</h3>
+            <div class="chips">
+              <span class="chip">Java</span><span class="chip">Python</span><span class="chip">JavaScript</span>
+              <span class="chip">C</span><span class="chip">C++</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>Web</h3>
+            <div class="chips">
+              <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">React.js</span>
+              <span class="chip">React Native</span><span class="chip">Angular</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>Data</h3>
+            <div class="chips">
+              <span class="chip">MySQL</span><span class="chip">RDBMS</span><span class="chip">Firebase</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>Tools</h3>
+            <div class="chips">
+              <span class="chip">Git</span><span class="chip">Linux/Unix</span><span class="chip">UI/UX Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="section">
+      <div class="container resume">
+        <div>
+          <h2>Resume</h2>
+          <p class="muted">
+            Download my latest resume (updated from the file you uploaded).
+          </p>
+        </div>
+        <div class="resume-actions">
+          <a class="btn primary" href="assets/Shushil_Karki_Resume.docx" download>Download Resume</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/shushil-karki-29b028289/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn ghost" href="https://github.com/print00" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">If you’re hiring or want to collaborate, send a message — I reply fast.</p>
+        </div>
+
+        <form id="contact-form" class="contact" novalidate>
+          <div class="field-row">
+            <label>
+              <span>Your Name</span>
+              <input id="name" type="text" placeholder="Jane Doe" required />
+            </label>
+            <label>
+              <span>Your Email</span>
+              <input id="email" type="email" placeholder="jane@email.com" required />
+            </label>
+          </div>
+
+          <label>
+            <span>Your Message</span>
+            <textarea id="message" placeholder="Tell me what you're working on…" required></textarea>
+          </label>
+
+          <div class="contact-actions">
+            <button type="submit" class="btn primary">Send Message</button>
+            <p class="muted tiny">This form currently shows a confirmation message (no backend yet).</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Shushil Karki</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/shushil-karki-29b028289/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/print00" target="_blank" rel="noopener">GitHub</a>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
