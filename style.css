@@ -593,6 +593,14 @@ h2{
   flex-wrap: wrap;
 }
 .resume-actions{ display:flex; gap: 10px; flex-wrap: wrap; }
+.icon-btn{
+  gap: 8px;
+}
+.icon-btn img{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
 
 /* Contact */
 .contact{
