@@ -6,10 +6,10 @@
   <meta name="description" content="Software Engineer & Full Stack Developer portfolio of Shushil Karki" />
   <title>Portfolio — Shushil Karki</title>
 
-  <!-- Fonts (Apple-like: system font + Inter fallback) -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
@@ -42,31 +42,48 @@
     <!-- Hero -->
     <section id="top" class="hero" aria-label="Intro">
       <div class="hero-bg" role="img" aria-label="Mountain background"></div>
+      <div class="hero-orbs" aria-hidden="true">
+        <span class="orb orb-a"></span>
+        <span class="orb orb-b"></span>
+        <span class="orb orb-c"></span>
+      </div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-scene" aria-hidden="true">
+        <div class="scene-card scene-card-a">
+          <span class="scene-label">Frontend Systems</span>
+          <strong>Fast, polished interfaces</strong>
+        </div>
+        <div class="scene-card scene-card-b">
+          <span class="scene-label">Backend Logic</span>
+          <strong>Reliable data and APIs</strong>
+        </div>
+        <div class="scene-ring"></div>
+      </div>
 
-      <div class="container hero-content">
-        <p class="eyebrow">Software Engineer • Full Stack Developer</p>
-        <h1>Full-stack developer building practical web apps with clean UI, solid data flows, and maintainable code.</h1>
-        <p class="subhead">
+      <div class="container hero-content" data-reveal="up">
+        <p class="eyebrow" data-reveal="up">Software Engineer • Full Stack Developer</p>
+        <h1 data-reveal="up" data-reveal-delay="120">Full-stack developer building practical web apps with clean UI, solid data flows, and maintainable code.</h1>
+        <p class="subhead" data-reveal="up" data-reveal-delay="220">
           Computer Science student at Marymount University graduating in May 2026. I am currently building internal
           search, CRUD, and reporting workflows for the GoVA project and looking for software engineering roles where I
           can ship user-facing product improvements fast without cutting corners on code quality.
         </p>
 
-        <div class="hero-actions">
+        <div class="hero-actions" data-reveal="up" data-reveal-delay="320">
           <a class="btn primary" href="#projects">View Projects</a>
           <a class="btn ghost" href="#resume">Resume</a>
         </div>
 
-        <div class="hero-meta">
-          <div class="meta-card">
+        <div class="hero-meta" data-reveal="up" data-reveal-delay="420">
+          <div class="meta-card" data-tilt>
             <span class="meta-title">Current</span>
             <span class="meta-value">Software Engineer Intern</span>
           </div>
-          <div class="meta-card">
+          <div class="meta-card" data-tilt>
             <span class="meta-title">Location</span>
             <span class="meta-value">Alexandria, VA</span>
           </div>
-          <div class="meta-card">
+          <div class="meta-card" data-tilt>
             <span class="meta-title">Focus</span>
             <span class="meta-value">Full‑stack + UI/UX</span>
           </div>
@@ -79,7 +96,7 @@
     <!-- About -->
     <section id="about" class="section">
       <div class="container split">
-        <div>
+        <div data-reveal="up">
           <h2>About</h2>
           <p>
             I build software with a product mindset. I care about clear workflows, readable code, and interfaces that
@@ -99,7 +116,7 @@
           </div>
         </div>
 
-        <div class="about-card">
+        <div class="about-card" data-reveal="up" data-reveal-delay="120" data-tilt>
           <div class="about-photo-wrap">
             <img class="profile-photo" src="assets/shushil-profile.png" alt="Portrait of Shushil Karki" width="988" height="1200" loading="lazy" />
           </div>
@@ -120,13 +137,13 @@
     <!-- Experience -->
     <section id="experience" class="section alt">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal="up">
           <h2>Experience</h2>
           <p class="muted">The work I’m doing right now — focused on real users, real data, and real results.</p>
         </div>
 
         <div class="timeline">
-          <article class="timeline-card">
+          <article class="timeline-card" data-reveal="up" data-tilt>
             <div class="timeline-top">
               <h3>Software Engineer Intern — Marymount University (GoVA Project)</h3>
               <span class="pill">Jan 2026 — Present</span>
@@ -145,13 +162,13 @@
     <!-- Projects -->
     <section id="projects" class="section">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal="up">
           <h2>Projects</h2>
           <p class="muted">A mix of full-stack, frontend, and embedded projects that reflect how I approach product, code quality, and usability.</p>
         </div>
 
         <div class="project-showcase">
-          <article class="featured-project">
+          <article class="featured-project" data-reveal="up" data-tilt>
             <div class="featured-project-copy">
               <span class="project-kicker">Featured Project</span>
               <h3>JobTrackr Pro</h3>
@@ -200,7 +217,7 @@
           </article>
 
           <div class="cards">
-            <article class="card">
+            <article class="card" data-reveal="up" data-reveal-delay="80" data-tilt>
               <div class="card-media gradient-a" aria-hidden="true"></div>
               <div class="card-body">
                 <div class="card-top">
@@ -225,7 +242,7 @@
               </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-reveal="up" data-reveal-delay="160" data-tilt>
               <div class="card-media gradient-b" aria-hidden="true"></div>
               <div class="card-body">
                 <div class="card-top">
@@ -250,7 +267,7 @@
               </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-reveal="up" data-reveal-delay="240" data-tilt>
               <div class="card-media gradient-c" aria-hidden="true"></div>
               <div class="card-body">
                 <div class="card-top">
@@ -277,7 +294,7 @@
               </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-reveal="up" data-reveal-delay="320" data-tilt>
               <div class="card-media gradient-d" aria-hidden="true"></div>
               <div class="card-body">
                 <div class="card-top">
@@ -309,13 +326,13 @@
     <!-- Skills -->
     <section id="skills" class="section alt">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal="up">
           <h2>Skills</h2>
           <p class="muted">Tools I’m comfortable building with (and improving daily).</p>
         </div>
 
         <div class="skill-grid">
-          <div class="skill-card">
+          <div class="skill-card" data-reveal="up" data-tilt>
             <h3>Frontend</h3>
             <div class="chips">
               <span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">React</span>
@@ -323,7 +340,7 @@
             </div>
           </div>
 
-          <div class="skill-card">
+          <div class="skill-card" data-reveal="up" data-reveal-delay="90" data-tilt>
             <h3>Backend</h3>
             <div class="chips">
               <span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">REST APIs</span>
@@ -331,7 +348,7 @@
             </div>
           </div>
 
-          <div class="skill-card">
+          <div class="skill-card" data-reveal="up" data-reveal-delay="180" data-tilt>
             <h3>Data & Storage</h3>
             <div class="chips">
               <span class="chip">MongoDB</span><span class="chip">MySQL</span><span class="chip">Structured Data</span>
@@ -339,7 +356,7 @@
             </div>
           </div>
 
-          <div class="skill-card">
+          <div class="skill-card" data-reveal="up" data-reveal-delay="270" data-tilt>
             <h3>Tools & Workflow</h3>
             <div class="chips">
               <span class="chip">Git</span><span class="chip">Linux/Unix</span><span class="chip">Debugging</span>
@@ -352,7 +369,7 @@
 
     <!-- Resume -->
     <section id="resume" class="section">
-      <div class="container resume">
+      <div class="container resume" data-reveal="up">
         <div>
           <h2>Resume</h2>
           <p class="muted">
@@ -376,13 +393,13 @@
     <!-- Contact -->
     <section id="contact" class="section alt">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal="up">
           <h2>Contact</h2>
           <p class="muted">If you are hiring, collaborating, or want to talk through a project, the fastest way to reach me is directly.</p>
         </div>
 
-        <div class="contact contact-grid">
-          <div class="contact-panel">
+        <div class="contact contact-grid" data-reveal="up">
+          <div class="contact-panel" data-tilt>
             <p class="contact-title">Best Contact</p>
             <p class="contact-copy">Email is the best channel for interview outreach, collaboration, and project discussions.</p>
             <div class="contact-actions">
@@ -391,7 +408,7 @@
             </div>
           </div>
 
-          <div class="contact-panel">
+          <div class="contact-panel" data-tilt>
             <p class="contact-title">Direct Links</p>
             <ul class="contact-list">
               <li><span>Email</span><a href="mailto:shushil2060@gmail.com">shushil2060@gmail.com</a></li>
