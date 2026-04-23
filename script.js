@@ -2,6 +2,7 @@ const body = document.body;
 const toggleBtn = document.querySelector('.nav-toggle');
 const navMenu = document.getElementById('nav-menu');
 const spotlight = document.querySelector('.spotlight');
+const heroOrb = document.querySelector('.hero-orb');
 const revealItems = document.querySelectorAll('.reveal-item');
 const tiltCards = document.querySelectorAll('.tilt-card');
 const magneticButtons = document.querySelectorAll('.magnetic');
@@ -61,10 +62,26 @@ if (spotlight && window.matchMedia('(prefers-reduced-motion: no-preference)').ma
     const y = `${(event.clientY / window.innerHeight) * 100}%`;
     spotlight.style.setProperty('--spotlight-x', x);
     spotlight.style.setProperty('--spotlight-y', y);
+
+    if (heroOrb) {
+      const orbX = (event.clientX / window.innerWidth - 0.5) * 28;
+      const orbY = (event.clientY / window.innerHeight - 0.5) * 28;
+      heroOrb.style.transform = `translate3d(${orbX}px, ${orbY}px, 0)`;
+    }
   });
 }
 
 if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+  if (heroOrb) {
+    window.addEventListener(
+      'scroll',
+      () => {
+        heroOrb.style.opacity = `${Math.max(0.45, 0.95 - window.scrollY / 900)}`;
+      },
+      { passive: true }
+    );
+  }
+
   tiltCards.forEach((card) => {
     card.addEventListener('pointermove', (event) => {
       const rect = card.getBoundingClientRect();

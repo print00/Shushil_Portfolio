@@ -94,6 +94,7 @@
         </div>
 
         <div class="hero-visual reveal-item reveal-scale">
+          <div class="hero-orb" aria-hidden="true"></div>
           <div class="hero-panel tilt-card">
             <div class="hero-panel-top">
               <span class="panel-pill">Current role</span>
@@ -105,8 +106,23 @@
                 <h2>State Street</h2>
                 <p>Financial platforms, backend services, cloud-native systems.</p>
               </article>
-              <article class="hero-image-card glass-card">
-                <img src="assets/shushil-profile.png" alt="Portrait of Shushil Karki" width="988" height="1200" loading="eager" />
+              <article class="hero-code-card glass-card">
+                <div class="code-toolbar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <pre aria-label="Code sample showing engineering focus"><code><span class="code-key">const</span> platform = <span class="code-string">"fast + reliable"</span>;
+<span class="code-key">const</span> stack = [<span class="code-string">"Java"</span>, <span class="code-string">"Spring Boot"</span>, <span class="code-string">"React"</span>, <span class="code-string">"AWS"</span>];
+
+<span class="code-key">export</span> <span class="code-key">function</span> <span class="code-fn">shipValue</span>() {
+  <span class="code-key">return</span> {
+    latency: <span class="code-number">-45</span>,
+    deployments: <span class="code-number">+60</span>,
+    focus: <span class="code-string">"clean systems, sharp UX"</span>
+  };
+}</code></pre>
+                <div class="code-glow" aria-hidden="true"></div>
               </article>
               <article class="hero-mini-card glass-card floating-card floating-card-a">
                 <span class="micro-label">Core stack</span>
@@ -155,6 +171,17 @@
                 <span class="chip">Event-driven systems</span>
                 <span class="chip">Performance optimization</span>
                 <span class="chip">Product-minded UI</span>
+              </div>
+            </article>
+
+            <article class="about-portrait glass-card reveal-item reveal-scale" data-reveal-delay="80">
+              <div class="portrait-frame">
+                <img src="assets/shushil-profile.png" alt="Portrait of Shushil Karki" width="988" height="1200" loading="lazy" />
+              </div>
+              <div class="portrait-copy">
+                <p class="micro-label">Based in the U.S.</p>
+                <h3>Full-stack engineer with backend depth and frontend taste.</h3>
+                <p>I like building systems that perform well under pressure and still feel clean and intuitive to the people using them.</p>
               </div>
             </article>
 
@@ -277,6 +304,11 @@
               <div class="featured-project-panel tilt-card">
                 <div class="featured-project-media">
                   <img src="assets/Job_tracker.png" alt="JobTrackr Pro dashboard screen" loading="lazy" />
+                </div>
+                <div class="featured-badge-strip" aria-label="Featured project strengths">
+                  <span>Dashboard UX</span>
+                  <span>JWT Auth</span>
+                  <span>Analytics</span>
                 </div>
                 <p class="panel-title">What I contributed</p>
                 <ul class="project-points">
@@ -440,12 +472,42 @@
           </div>
 
           <div class="skill-grid">
-            <article class="skill-card reveal-item reveal-rise"><h3>Languages</h3><div class="chips"><span class="chip">Java</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span></div></article>
-            <article class="skill-card reveal-item reveal-rise" data-reveal-delay="60"><h3>Frontend</h3><div class="chips"><span class="chip">React.js</span><span class="chip">Next.js</span><span class="chip">Redux Toolkit</span><span class="chip">Tailwind CSS</span><span class="chip">Material UI</span></div></article>
-            <article class="skill-card reveal-item reveal-rise" data-reveal-delay="120"><h3>Backend</h3><div class="chips"><span class="chip">Spring Boot</span><span class="chip">Spring MVC</span><span class="chip">Node.js</span><span class="chip">NestJS</span><span class="chip">Express.js</span><span class="chip">REST APIs</span><span class="chip">GraphQL</span></div></article>
-            <article class="skill-card reveal-item reveal-rise" data-reveal-delay="180"><h3>Cloud &amp; DevOps</h3><div class="chips"><span class="chip">AWS</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Terraform</span><span class="chip">Helm</span><span class="chip">GitHub Actions</span><span class="chip">ArgoCD</span></div></article>
-            <article class="skill-card reveal-item reveal-rise" data-reveal-delay="240"><h3>Data &amp; Messaging</h3><div class="chips"><span class="chip">PostgreSQL</span><span class="chip">Oracle DB</span><span class="chip">MongoDB</span><span class="chip">Redis</span><span class="chip">Kafka</span><span class="chip">RabbitMQ</span></div></article>
-            <article class="skill-card reveal-item reveal-rise" data-reveal-delay="300"><h3>Observability &amp; Security</h3><div class="chips"><span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">ELK Stack</span><span class="chip">Datadog</span><span class="chip">Splunk</span><span class="chip">Spring Security</span><span class="chip">OAuth 2.0</span><span class="chip">JWT</span><span class="chip">PCI-DSS</span></div></article>
+            <article class="skill-card reveal-item reveal-rise">
+              <span class="skill-icon" aria-hidden="true">01</span>
+              <h3>Core languages</h3>
+              <p>My day-to-day foundation for backend services, modern UIs, and systems work.</p>
+              <div class="chips"><span class="chip">Java</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">Python</span></div>
+            </article>
+            <article class="skill-card reveal-item reveal-rise" data-reveal-delay="60">
+              <span class="skill-icon" aria-hidden="true">02</span>
+              <h3>Frontend systems</h3>
+              <p>Building interfaces that feel clear, responsive, and production-ready.</p>
+              <div class="chips"><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Redux Toolkit</span><span class="chip">Tailwind CSS</span></div>
+            </article>
+            <article class="skill-card reveal-item reveal-rise" data-reveal-delay="120">
+              <span class="skill-icon" aria-hidden="true">03</span>
+              <h3>Backend architecture</h3>
+              <p>Designing APIs and services that scale cleanly and stay maintainable.</p>
+              <div class="chips"><span class="chip">Spring Boot</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">GraphQL</span></div>
+            </article>
+            <article class="skill-card reveal-item reveal-rise" data-reveal-delay="180">
+              <span class="skill-icon" aria-hidden="true">04</span>
+              <h3>Cloud delivery</h3>
+              <p>Shipping software with automation, containerization, and reliable deployment paths.</p>
+              <div class="chips"><span class="chip">AWS</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Terraform</span></div>
+            </article>
+            <article class="skill-card reveal-item reveal-rise" data-reveal-delay="240">
+              <span class="skill-icon" aria-hidden="true">05</span>
+              <h3>Data and messaging</h3>
+              <p>Handling persistence, caching, and event-driven communication across services.</p>
+              <div class="chips"><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">Redis</span><span class="chip">Kafka</span></div>
+            </article>
+            <article class="skill-card reveal-item reveal-rise" data-reveal-delay="300">
+              <span class="skill-icon" aria-hidden="true">06</span>
+              <h3>Observability and security</h3>
+              <p>Adding the guardrails that keep modern systems measurable, secure, and trustworthy.</p>
+              <div class="chips"><span class="chip">Grafana</span><span class="chip">Datadog</span><span class="chip">Spring Security</span><span class="chip">JWT</span></div>
+            </article>
           </div>
         </div>
       </section>
