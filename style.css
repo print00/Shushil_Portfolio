@@ -908,6 +908,20 @@ h1 span {
   height: 140px;
 }
 
+.project-cover {
+  height: 230px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(7, 13, 24, 0.72);
+}
+
+.project-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .card-body {
   padding: 22px;
 }
@@ -1263,6 +1277,10 @@ a:focus-visible {
 
   .featured-project-media img {
     height: 260px;
+  }
+
+  .project-cover {
+    height: 210px;
   }
 
   .hero-stats {
